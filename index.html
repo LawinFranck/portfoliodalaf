@@ -147,6 +147,7 @@
                     height: 100%;
                     border-radius: 50%;
                     object-fit: cover;
+                    object-position: top center;
                   " />
             </div>
             <div class="hero-avatar-ring"></div>
@@ -1180,6 +1181,48 @@
     window.addEventListener('DOMContentLoaded', () => {
       const savedLang = localStorage.getItem('portfolio-lang') || 'fr';
       setLanguage(savedLang);
+    });
+
+    // Auto-scroll project card info column on hover
+    document.querySelectorAll('.project-card').forEach(card => {
+      const body = card.querySelector('.project-body');
+      if (!body) return;
+
+      let scrollTimer = null;
+
+      card.addEventListener('mouseenter', () => {
+        const scrollDistance = body.scrollHeight - body.clientHeight;
+        if (scrollDistance <= 0) return;
+
+        // Scroll down smoothly over 2.5s
+        const duration = 2500;
+        const start = body.scrollTop;
+        const startTime = performance.now();
+
+        function animateScroll(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease-in-out
+          const ease = progress < 0.5
+            ? 2 * progress * progress
+            : -1 + (4 - 2 * progress) * progress;
+          body.scrollTop = start + scrollDistance * ease;
+          if (progress < 1) {
+            scrollTimer = requestAnimationFrame(animateScroll);
+          }
+        }
+
+        scrollTimer = requestAnimationFrame(animateScroll);
+      });
+
+      card.addEventListener('mouseleave', () => {
+        if (scrollTimer) {
+          cancelAnimationFrame(scrollTimer);
+          scrollTimer = null;
+        }
+        // Smoothly scroll back to top
+        body.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     });
   </script>
 </body>
