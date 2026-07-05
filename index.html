@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>DAGAN Lawin Franck — Développeur Web Full Stack</title>
+  <meta name="description"
+    content="Portfolio de DAGAN Lawin Franck, développeur web full stack au Bénin. Spécialisé en création de sites web, applications de gestion et plateformes e-commerce." />
+  <meta name="robots" content="index, follow" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.1/300.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.1/400.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.1/500.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.1/600.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.1/700.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.1/800.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.1.1/600.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.1.1/700.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/images/daganfranck.jpeg" alt="DAGAN Lawin Franck" class="nav-logo-img" style="
+              height: 45px;
+              width: auto;
+              border-radius: 50%;
+              object-fit: cover;
+            " />
+        <span class="nav-logo-text">DAGAN Lawin Franck<span>.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#about">
+            <span data-lang="fr">À propos</span>
+            <span data-lang="en">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills">
+            <span data-lang="fr">Compétences</span>
+            <span data-lang="en">Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <span data-lang="fr">Projets</span>
+            <span data-lang="en">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#services">
+            <span data-lang="fr">Services</span>
+            <span data-lang="en">Services</span>
+          </a>
+        </li>
+        <li class="lang-switch-item">
+          <div class="lang-switch">
+            <button class="lang-btn active" id="lang-fr" onclick="setLanguage('fr')"
+              aria-label="Passer en Français">FR</button>
+            <span class="lang-separator">|</span>
+            <button class="lang-btn" id="lang-en" onclick="setLanguage('en')" aria-label="Switch to English">EN</button>
+          </div>
+        </li>
+        <li>
+          <a href="#contact" class="nav-cta">
+            <span data-lang="fr">Contact</span>
+            <span data-lang="en">Contact</span>
+          </a>
+        </li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content fade-up">
+        <div class="hero-badge" style="
+              display: inline-flex;
+              align-items: center;
+              gap: 0.5rem;
+              background: rgba(184, 148, 62, 0.15);
+              border: 1px solid rgba(184, 148, 62, 0.25);
+              padding: 0.5rem 1.4rem;
+              border-radius: 50px;
+              font-size: 0.82rem;
+              font-weight: 600;
+              color: var(--gold-light);
+              margin-bottom: 1.5rem;
+              letter-spacing: 0.04em;
+              text-transform: uppercase;
+            ">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <span data-lang="fr">Disponible pour de nouveaux projets</span>
+          <span data-lang="en">Available for new projects</span>
+        </div>
+        <h1>DAGAN<br /><span class="gold">Lawin Franck</span></h1>
+        <div class="hero-title-sub">
+          <span data-lang="fr">Développeur Web &amp; Expert Automatisation / IA</span>
+          <span data-lang="en">Web Developer &amp; Automation / AI Expert</span>
+        </div>
+        <p class="hero-desc">
+          <span data-lang="fr">Je conçois et développe des solutions web sur mesure et des flux d'automatisation
+            intelligents (n8n, agents IA) qui transforment les idées en plateformes performantes. Du site vitrine à
+            l'architecture complexe, je connecte vos outils pour libérer votre productivité.</span>
+          <span data-lang="en">I design and develop custom web solutions and intelligent automation workflows (n8n, AI
+            agents) that transform ideas into high-performance platforms. From showcase websites to complex
+            architectures, I connect your tools to unleash your productivity.</span>
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-gold">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span data-lang="fr">Voir mes projets</span>
+            <span data-lang="en">View my projects</span>
+          </a>
+          <a href="#contact" class="btn btn-white-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span data-lang="fr">Me contacter</span>
+            <span data-lang="en">Contact me</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual fade-up">
+        <div class="hero-avatar-wrapper">
+          <div class="hero-avatar">
+            <div class="hero-avatar-inner">
+              <img src="/images/daganfranck.jpeg" alt="DAGAN Lawin Franck" style="
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    object-fit: cover;
+                  " />
+            </div>
+            <div class="hero-avatar-ring"></div>
+          </div>
+          <div class="hero-float-card float-card-1">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <span data-lang="fr">+7 projets livrés</span>
+            <span data-lang="en">+7 projects delivered</span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar fade-up">
+    <div class="stat-item">
+      <div class="stat-number">7+</div>
+      <div class="stat-label">
+        <span data-lang="fr">Projets réalisés</span>
+        <span data-lang="en">Projects completed</span>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">12+</div>
+      <div class="stat-label">
+        <span data-lang="fr">Technologies maîtrisées</span>
+        <span data-lang="en">Technologies mastered</span>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">4+</div>
+      <div class="stat-label">
+        <span data-lang="fr">Secteurs couverts</span>
+        <span data-lang="en">Sectors covered</span>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">
+        <span data-lang="fr">Projets livrés à temps</span>
+        <span data-lang="en">On-time delivery</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="fade-up">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <span data-lang="fr">À propos</span>
+        <span data-lang="en">About</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="fr">Développeur passionné,<br />basé au Bénin</span>
+        <span data-lang="en">Passionate developer,<br />based in Benin</span>
+      </h2>
+    </div>
+
+    <div class="about-grid fade-up">
+      <div class="about-text">
+        <p>
+          <span data-lang="fr">Je suis <strong>DAGAN Lawin Franck</strong>, titulaire d'une <strong>Licence
+              Professionnelle en Informatique</strong>. Passionné par le développement web et l'automatisation, je crée
+            des solutions numériques sur mesure qui résolvent des problématiques métiers concrètes.</span>
+          <span data-lang="en">I am <strong>DAGAN Lawin Franck</strong>, holder of a <strong>Professional Bachelor's
+              Degree in Computer Science</strong>. Passionate about web development and automation, I create custom
+            digital solutions that solve real business problems.</span>
+        </p>
+        <p>
+          <span data-lang="fr">Mon approche combine <strong>rigueur technique</strong> et <strong>sensibilité
+              UI/UX</strong> pour concevoir des applications performantes, esthétiques et évolutives. J'accorde une
+            importance majeure à l'intégration d'outils modernes d'automatisation (n8n, APIs) et d'IA (Gemini,
+            LangChain) pour démultiplier la productivité des systèmes.</span>
+          <span data-lang="en">My approach combines <strong>technical rigor</strong> and <strong>UI/UX
+              sensitivity</strong> to design high-performance, beautiful, and scalable applications. I place a major
+            focus on integrating modern automation tools (n8n, APIs) and AI (Gemini, LangChain) to amplify systems'
+            productivity.</span>
+        </p>
+        <p>
+          <span data-lang="fr">De la restauration à la santé, en passant par le matrimoine chrétien, l'art culturel et
+            l'automatisation de flux médias, mes projets témoignent de mon agilité à <strong>créer un impact
+              concret</strong> dans divers secteurs d'activité.</span>
+          <span data-lang="en">From catering to healthcare, including Christian matchmaking, cultural art, and media
+            workflow automation, my projects demonstrate my agility to <strong>create a concrete impact</strong> in
+            various business sectors.</span>
+        </p>
+        <div class="about-info">
+          <div class="about-info-item">
+            <span class="label"><span data-lang="fr">Nom complet</span><span data-lang="en">Full name</span></span>
+            <span class="value">DAGAN Lawin Franck</span>
+          </div>
+          <div class="about-info-item">
+            <span class="label"><span data-lang="fr">Diplôme</span><span data-lang="en">Degree</span></span>
+            <span class="value"><span data-lang="fr">Licence Pro Informatique</span><span data-lang="en">B.S. Computer
+                Science</span></span>
+          </div>
+          <div class="about-info-item">
+            <span class="label"><span data-lang="fr">Localisation</span><span data-lang="en">Location</span></span>
+            <span class="value"><span data-lang="fr">Bénin</span><span data-lang="en">Benin</span></span>
+          </div>
+          <div class="about-info-item">
+            <span class="label"><span data-lang="fr">Disponibilité</span><span data-lang="en">Availability</span></span>
+            <span class="value" style="color: var(--green)">● <span data-lang="fr">Disponible</span><span
+                data-lang="en">Available</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <h4>
+            <svg viewBox="0 0 24 24">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <span data-lang="fr">Orientation résultats</span>
+            <span data-lang="en">Results-oriented</span>
+          </h4>
+          <p>
+            <span data-lang="fr">Chaque solution est pensée pour apporter une valeur mesurable : automatiser des tâches
+              chronophages, simplifier des flux de travail ou optimiser l'expérience utilisateur.</span>
+            <span data-lang="en">Each solution is designed to deliver measurable value: automating time-consuming tasks,
+              simplifying workflows, or optimizing the user experience.</span>
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h4>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <span data-lang="fr">Fiabilité & robustesse</span>
+            <span data-lang="en">Reliability & robustness</span>
+          </h4>
+          <p>
+            <span data-lang="fr">Je privilégie des architectures découplées, des API sécurisées et des outils
+              d'intégration stables pour garantir la durabilité de vos solutions logicielles.</span>
+            <span data-lang="en">I favor decoupled architectures, secure APIs, and stable integration tools to guarantee
+              the long-term durability of your software solutions.</span>
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h4>
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+            <span data-lang="fr">Communication & suivi</span>
+            <span data-lang="en">Communication & support</span>
+          </h4>
+          <p>
+            <span data-lang="fr">Une écoute attentive de vos besoins, un développement transparent jalonné de livrables
+              précis et un accompagnement post-lancement de qualité.</span>
+            <span data-lang="en">Attentive listening to your requirements, transparent development with clear
+              milestones, and quality post-launch support.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="section">
+      <div class="fade-up">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+          </svg>
+          <span data-lang="fr">Compétences</span>
+          <span data-lang="en">Skills</span>
+        </div>
+        <h2 class="section-title">
+          <span data-lang="fr">Technologies &amp;<br />expertises</span>
+          <span data-lang="en">Technologies &amp;<br />Expertise</span>
+        </h2>
+        <p class="section-desc">
+          <span data-lang="fr">Un arsenal technique complet pour répondre à tous types de besoins web et
+            d'automatisation.</span>
+          <span data-lang="en">A complete technical arsenal to meet all types of web and automation needs.</span>
+        </p>
+      </div>
+
+      <div class="skills-categories fade-up">
+        <div class="skill-category">
+          <h3>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+            <span data-lang="fr">Automatisation &amp; IA</span>
+            <span data-lang="en">Automation &amp; AI</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">n8n Workflow</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">Gemini / OpenAI API</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">API REST &amp; Webhooks</span>
+            <span class="skill-tag">Docker / Render</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>
+            <svg viewBox="0 0 24 24">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            Frontend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">UI/UX Design</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+            Backend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">API REST</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Authentification</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <span data-lang="fr">Outils &amp; Services</span>
+            <span data-lang="en">Tools &amp; Services</span>
+            </h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Git / GitHub</span>
+              <span class="skill-tag">Vercel</span>
+              <span class="skill-tag">Netlify</span>
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Paiement en ligne</span>
+              <span class="skill-tag">Hébergement Web</span>
+            </div>
+        </div>
+        <div class="skill-category">
+          <h3>
+            <svg viewBox="0 0 24 24">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+            <span data-lang="fr">Domaines d'application</span>
+            <span data-lang="en">Application Domains</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">E-commerce</span>
+            <span class="skill-tag">Gestion / CRM</span>
+            <span class="skill-tag">Paiement en ligne</span>
+            <span class="skill-tag">Réseaux sociaux</span>
+            <span class="skill-tag">Plateformes communautaires</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section--wide" id="projects">
+    <div class="fade-up">
+      <div class="section-label">
+        <svg viewBox="0 0 24 24">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+          <line x1="8" y1="21" x2="16" y2="21" />
+          <line x1="12" y1="17" x2="12" y2="21" />
+        </svg>
+        <span data-lang="fr">Portfolio</span>
+        <span data-lang="en">Portfolio</span>
+      </div>
+      <h2 class="section-title">
+        <span data-lang="fr">Projets réalisés</span>
+        <span data-lang="en">Completed Projects</span>
+      </h2>
+      <p class="section-desc">
+        <span data-lang="fr">Une sélection de projets concrets, du développement d'applications métiers à
+          l'automatisation intelligente par IA.</span>
+        <span data-lang="en">A selection of concrete projects, ranging from business applications to intelligent AI
+          automations.</span>
+      </p>
+    </div>
+
+    <div class="projects-grid fade-up">
+      <!-- Project 1: LinkedIn Auto-Poster -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/linkedin_auto_poster.png" alt="LinkedIn Auto-Poster" class="project-image" />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">n8n Workflow</span>
+            <span class="project-tag">Gemini AI</span>
+            <span class="project-tag">Render / Docker</span>
+          </div>
+          <h3>LinkedIn Auto-Poster (IA)</h3>
+          <p>
+            <span data-lang="fr">Système autonome de rédaction et de publication quotidienne sur LinkedIn. Un agent
+              LangChain connecté à Gemini Flash rédige des publications professionnelles, crée un prompt d'image et
+              génère un visuel 3D sur mesure via API (Pollinations) avant publication automatisée.</span>
+            <span data-lang="en">Autonomous writing and daily posting system for LinkedIn. A LangChain agent powered by
+              Gemini Flash drafts professional posts, engineers an image prompt, generates a matching 3D visual via API
+              (Pollinations), and publishes automatically.</span>
+          </p>
+          <div class="project-features">
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Génération de contenu IA</span>
+              <span data-lang="en">AI Content Generation</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Génération d'images 3D</span>
+              <span data-lang="en">3D Image Generation</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Auto-hébergé sur Render</span>
+              <span data-lang="en">Self-hosted on Render</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: BankRDV WhatsApp Bot -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/whatsapp_bot.png" alt="WhatsApp Notification Engine" class="project-image" />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">Baileys API</span>
+            <span class="project-tag">Webhooks</span>
+          </div>
+          <h3>BankRDV WhatsApp Engine</h3>
+          <p>
+            <span data-lang="fr">Bot de messagerie instantanée API pour automatiser la confirmation de rendez-vous
+              clients. Développé en Node.js avec Baileys (WA socket), il gère l'authentification QR-code, l'écoute de
+              webhooks sécurisés et l'envoi automatisé de confirmations textuelles et de billets PDF.</span>
+            <span data-lang="en">API instant messaging bot to automate client appointment confirmations. Built in
+              Node.js with Baileys (WA socket), it manages QR-code authentication, secure webhook listening, and
+              automatic delivery of text confirmations and PDF tickets.</span>
+          </p>
+          <div class="project-features">
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Authentification QR persistante</span>
+              <span data-lang="en">Persistent QR Auth</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Envoi PDF Base64</span>
+              <span data-lang="en">Base64 PDF Dispatch</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Sécurité HMAC SHA256</span>
+              <span data-lang="en">HMAC SHA256 Security</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Marose Cafeteria -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/marosecafeteria.jpeg" alt="Marose Cafeteria - Site de gestion des annexes"
+            class="project-image" />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Gestion</span>
+            <span class="project-tag">Restauration</span>
+            <span class="project-tag">Web App</span>
+          </div>
+          <h3>Marose Cafeteria</h3>
+          <p>
+            <span data-lang="fr">Plateforme complète de gestion des annexes d'un cafétéria. Suivi des commandes en temps
+              réel, gestion des tables et réservations, tableau de bord analytique pour le personnel.</span>
+            <span data-lang="en">Comprehensive branch management platform for a cafeteria. Real-time order tracking,
+              table and reservation management, and analytical dashboard for staff.</span>
+          </p>
+          <div class="project-features">
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Gestion des annexes</span>
+              <span data-lang="en">Branch management</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Suivi des commandes</span>
+              <span data-lang="en">Order tracking</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Tableau de bord</span>
+              <span data-lang="en">Dashboard</span>
+            </span>
+          </div>
+          <a href="https://marose-leroiducafe.com" target="_blank" rel="noopener" class="project-link">
+            <span data-lang="fr">Visiter le site</span>
+            <span data-lang="en">Visit website</span>
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4: La Croix Zinvié -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/hopital.png" alt="La Croix Zinvié - Paiement en ligne hospitalier" class="project-image" />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Santé</span>
+            <span class="project-tag">Paiement</span>
+            <span class="project-tag">Fintech</span>
+          </div>
+          <h3>HÔPITAL - Paiement en ligne</h3>
+          <p>
+            <span data-lang="fr">Site web de paiement en ligne des prestations et services hospitaliers. Simplification
+              du processus de règlement pour les patients avec intégration de moyens de paiement sécurisés.</span>
+            <span data-lang="en">Online payment system for hospital fees and services. Streamlines the payment process
+              for patients with secure integrated payment methods.</span>
+          </p>
+          <div class="project-features">
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Paiement sécurisé</span>
+              <span data-lang="en">Secure payment</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Factures digitales</span>
+              <span data-lang="en">Digital invoicing</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Suivi en direct</span>
+              <span data-lang="en">Live tracking</span>
+            </span>
+          </div>
+          <a href="https://lacroixzinvie.kesug.com" target="_blank" rel="noopener" class="project-link">
+            <span data-lang="fr">Visiter le site</span>
+            <span data-lang="en">Visit website</span>
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 5: Love Infini -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/loveinfini.jpeg" alt="Love Infini - Plateforme matrimoniale chrétienne"
+            class="project-image" />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Social</span>
+            <span class="project-tag">Communauté</span>
+            <span class="project-tag">Matching</span>
+          </div>
+          <h3>Love Infini</h3>
+          <p>
+            <span data-lang="fr">Plateforme de rencontre dédiée aux jeunes célibataires chrétiens en vue du mariage.
+              Espace sécurisé avec vérification des profils, modération humaine et accompagnement pastoral.</span>
+            <span data-lang="en">Dating platform dedicated to young Christian singles looking for marriage. Secure
+              environment featuring profile verification, human moderation, and pastoral support.</span>
+          </p>
+          <div class="project-features">
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Profils vérifiés</span>
+              <span data-lang="en">Verified profiles</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Modération stricte</span>
+              <span data-lang="en">Strict moderation</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Messagerie privée</span>
+              <span data-lang="en">Private messaging</span>
+            </span>
+          </div>
+          <a href="https://love-infini.com" target="_blank" rel="noopener" class="project-link">
+            <span data-lang="fr">Visiter le site</span>
+            <span data-lang="en">Visit website</span>
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 6: Bénin Art -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/beninart.jpeg" alt="Bénin Art - Vente d'art en ligne" class="project-image" />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">E-commerce</span>
+            <span class="project-tag">Art</span>
+            <span class="project-tag">Culture</span>
+          </div>
+          <h3>Bénin Art</h3>
+          <p>
+            <span data-lang="fr">Plateforme d'enregistrement et de vente en ligne des œuvres d'art et cinématographiques
+              au Bénin. Promotion numérique moderne du patrimoine culturel local.</span>
+            <span data-lang="en">Registration and online sales platform for art and film works in Benin. Modern digital
+              promotion of local cultural heritage.</span>
+          </p>
+          <div class="project-features">
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Galerie d'exposition</span>
+              <span data-lang="en">Exhibition gallery</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Vente d'œuvres</span>
+              <span data-lang="en">Artwork sales</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Catalogue d'artistes</span>
+              <span data-lang="en">Artists catalog</span>
+            </span>
+          </div>
+          <a href="https://benin-art.vercel.app" target="_blank" rel="noopener" class="project-link">
+            <span data-lang="fr">Visiter le site</span>
+            <span data-lang="en">Visit website</span>
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 7: Jasania Gomenage -->
+      <div class="project-card">
+        <div class="project-image-wrapper">
+          <img src="/images/jasaniagomenage.jpeg" alt="Jasania Gomenage - Tâches ménagères" class="project-image" />
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Services</span>
+            <span class="project-tag">Propreté</span>
+            <span class="project-tag">Matching</span>
+          </div>
+          <h3>Jasania Gomenage</h3>
+          <p>
+            <span data-lang="fr">Plateforme de gestion instantanée des tâches et courses ménagères. Mise en relation et
+              paiement en ligne pour des services à domicile.</span>
+            <span data-lang="en">On-demand platform for home cleaning and grocery errands. Matches service providers and
+              offers secure online payments.</span>
+          </p>
+          <div class="project-features">
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Liste de tâches partagée</span>
+              <span data-lang="en">Shared checklist</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Paiement en ligne</span>
+              <span data-lang="en">Online payment</span>
+            </span>
+            <span class="project-feature">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <span data-lang="fr">Prestataires vérifiés</span>
+              <span data-lang="en">Verified providers</span>
+            </span>
+          </div>
+          <a href="https://www.jasania-gomenage.com" target="_blank" rel="noopener" class="project-link">
+            <span data-lang="fr">Visiter le site</span>
+            <span data-lang="en">Visit website</span>
+            <svg viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services">
+    <div class="section">
+      <div class="fade-up" style="text-align: center; max-width: 650px; margin: 0 auto">
+        <div class="section-label" style="justify-content: center">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+          <span data-lang="fr">Services</span>
+          <span data-lang="en">Services</span>
+        </div>
+        <h2 class="section-title">
+          <span data-lang="fr">Ce que je peux faire<br />pour vous</span>
+          <span data-lang="en">What I can do<br />for you</span>
+        </h2>
+        <p class="section-desc" style="margin: 0 auto">
+          <span data-lang="fr">Des solutions web et d'automatisation adaptées à vos besoins, livrées avec
+            professionnalisme et dans les délais.</span>
+          <span data-lang="en">Web and automation solutions tailored to your needs, delivered with professionalism and
+            on schedule.</span>
+        </p>
+      </div>
+
+      <div class="services-grid fade-up">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="fr">Sites Web &amp; Vitrines</span>
+            <span data-lang="en">Websites &amp; Showcase Sites</span>
+          </h3>
+          <p>
+            <span data-lang="fr">Sites modernes, rapides et optimisés pour le référencement. Design responsive adapté à
+              tous les écrans.</span>
+            <span data-lang="en">Modern, fast, and SEO-optimized sites. Responsive design adapted to all screens.</span>
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="fr">E-commerce</span>
+            <span data-lang="en">E-Commerce</span>
+          </h3>
+          <p>
+            <span data-lang="fr">Boutiques en ligne avec gestion de catalogue, panier d'achat, paiement sécurisé et
+              suivi de commandes.</span>
+            <span data-lang="en">Online stores with catalog management, shopping cart, secure payments, and order
+              tracking.</span>
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="fr">Applications de Gestion</span>
+            <span data-lang="en">Management Apps</span>
+          </h3>
+          <p>
+            <span data-lang="fr">Outils internes pour gérer vos opérations : stocks, commandes, réservations, tableaux
+              de bord.</span>
+            <span data-lang="en">Internal tools to manage your operations: stocks, orders, bookings, dashboards.</span>
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="fr">Paiement en Ligne</span>
+            <span data-lang="en">Online Payments</span>
+          </h3>
+          <p>
+            <span data-lang="fr">Intégration de solutions de paiement sécurisées pour vos services, factures et
+              transactions en ligne.</span>
+            <span data-lang="en">Integration of secure payment solutions for your services, invoices, and online
+              transactions.</span>
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zM6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z" />
+              <line x1="9" y1="6" x2="15" y2="6" />
+              <line x1="9" y1="18" x2="15" y2="18" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="fr">Automatisation (n8n)</span>
+            <span data-lang="en">Workflow Automation (n8n)</span>
+          </h3>
+          <p>
+            <span data-lang="fr">Interconnexion de vos applications favorites pour éliminer les copier-coller et les
+              tâches manuelles répétitives.</span>
+            <span data-lang="en">Interconnection of your favorite applications to eliminate copy-pasting and repetitive
+              manual tasks.</span>
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 10a3 3 0 0 1 6 0c0 1-1 1.5-2 2v1" />
+              <line x1="12" y1="17" x2="12.01" y2="17" />
+            </svg>
+          </div>
+          <h3>
+            <span data-lang="fr">Intégration d'IA</span>
+            <span data-lang="en">AI Integration &amp; Bots</span>
+          </h3>
+          <p>
+            <span data-lang="fr">Connexion de modèles de langage (Gemini, GPT) pour rédiger du contenu, répondre à des
+              clients ou analyser des données.</span>
+            <span data-lang="en">Connection of Large Language Models (Gemini, GPT) to draft content, reply to customers,
+              or analyze data.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-info fade-up">
+        <h2>
+          <span data-lang="fr">Travaillons <span class="gold">ensemble</span> sur votre prochain projet</span>
+          <span data-lang="en">Let's work <span class="gold">together</span> on your next project</span>
+        </h2>
+        <p>
+          <span data-lang="fr">Vous avez un projet web ou d'automatisation en tête ? Discutons-en. Je suis disponible
+            pour des missions freelance, des collaborations et des partenariats.</span>
+          <span data-lang="en">Do you have a web or automation project in mind? Let's discuss it. I am available for
+            freelance missions, collaborations, and partnerships.</span>
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="label">Email</span>
+              <a href="mailto:lawin.dagan@gmail.com">lawin.dagan@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="label"><span data-lang="fr">Téléphone / WhatsApp</span><span data-lang="en">Phone /
+                  WhatsApp</span></span>
+              <a href="tel:+2290195864403">+229 01 95 86 44 03</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div class="contact-item-text">
+              <span class="label"><span data-lang="fr">Localisation</span><span data-lang="en">Location</span></span>
+              <span><span data-lang="fr">Bénin</span><span data-lang="en">Benin</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card fade-up">
+        <h3>
+          <span data-lang="fr">Envoyez-moi un message</span>
+          <span data-lang="en">Send me a message</span>
+        </h3>
+        <p>
+          <span data-lang="fr">Je vous répondrai dans les plus brefs délais.</span>
+          <span data-lang="en">I will get back to you as soon as possible.</span>
+        </p>
+
+        <form action="https://formspree.io/f/mqewezno" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label>
+                <span data-lang="fr">Votre nom</span>
+                <span data-lang="en">Your name</span>
+              </label>
+              <input type="text" name="nom" required data-placeholder-fr="Votre nom complet"
+                data-placeholder-en="Your full name" placeholder="Votre nom complet" />
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang="fr">Email</span>
+                <span data-lang="en">Email</span>
+              </label>
+              <input type="email" name="email" required data-placeholder-fr="votre@email.com"
+                data-placeholder-en="your@email.com" placeholder="votre@email.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang="fr">Sujet</span>
+              <span data-lang="en">Subject</span>
+            </label>
+            <input type="text" name="sujet" data-placeholder-fr="Développement d'un site web"
+              data-placeholder-en="Web development project" placeholder="Développement d'un site web" />
+          </div>
+          <div class="form-group">
+            <label>
+              <span data-lang="fr">Votre message</span>
+              <span data-lang="en">Your message</span>
+            </label>
+            <textarea rows="4" name="message" data-placeholder-fr="Décrivez votre projet ou votre besoin..."
+              data-placeholder-en="Describe your project or needs..."
+              placeholder="Décrivez votre projet ou votre besoin..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">
+            <svg viewBox="0 0 24 24">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            <span data-lang="fr">Envoyer le message</span>
+            <span data-lang="en">Send message</span>
+          </button>
+        </form>
+        <p class="form-privacy">
+          <span data-lang="fr">🔹 Vos données sont protégées et ne seront jamais partagées.</span>
+          <span data-lang="en">🔹 Your data is protected and will never be shared.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">DAGAN <span class="gold">.</span></div>
+    <p>
+      <span data-lang="fr">Développeur Web Full Stack &amp; Expert Automatisation — Bénin</span>
+      <span data-lang="en">Full Stack Web Developer &amp; Automation Expert — Benin</span>
+    </p>
+    <div class="footer-divider"></div>
+    <p>© 2026 DAGAN Lawin Franck. <span data-lang="fr">Tous droits réservés.</span><span data-lang="en">All rights
+        reserved.</span></p>
+    <div class="footer-socials">
+      <a href="https://wa.me/2290195864403" target="_blank" rel="noopener" class="footer-social-link"
+        aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        </svg>
+      </a>
+      <a href="mailto:lawin.dagan@gmail.com" class="footer-social-link" aria-label="Email">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <polyline points="22,6 12,13 2,6" />
+        </svg>
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        const href = this.getAttribute("href");
+        if (href === "#" || href === "") return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          document.getElementById("navLinks").classList.remove("open");
+        }
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener("scroll", () => {
+      const nav = document.getElementById("navbar");
+      if (window.scrollY > 20) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    // Mobile nav toggle
+    document.getElementById("navToggle").addEventListener("click", () => {
+      document.getElementById("navLinks").classList.toggle("open");
+    });
+
+    // Fade-up animation on scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" },
+    );
+
+    document.querySelectorAll(".fade-up").forEach((el) => {
+      observer.observe(el);
+    });
+
+    // Language translation logic
+    function setLanguage(lang) {
+      if (lang === 'en') {
+        document.body.classList.add('lang-en');
+        document.getElementById('lang-en').classList.add('active');
+        document.getElementById('lang-fr').classList.remove('active');
+        localStorage.setItem('portfolio-lang', 'en');
+      } else {
+        document.body.classList.remove('lang-en');
+        document.getElementById('lang-fr').classList.add('active');
+        document.getElementById('lang-en').classList.remove('active');
+        localStorage.setItem('portfolio-lang', 'fr');
+      }
+
+      // Update placeholders
+      const isEn = lang === 'en';
+      document.querySelectorAll('[data-placeholder-fr]').forEach(el => {
+        el.placeholder = isEn ? el.getAttribute('data-placeholder-en') : el.getAttribute('data-placeholder-fr');
+      });
+    }
+
+    // Initialize language on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('portfolio-lang') || 'fr';
+      setLanguage(savedLang);
+    });
+  </script>
+</body>
+
+</html>
